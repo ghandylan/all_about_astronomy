@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>The Moon</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/page3.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                <ul>
+                    <li><a href="page1.html">Astronomy</a></li>
+                    <li><a href="page2.html">Sun</a></li>
+                    <li><a href="page3.html">Moon</a></li>
+                    <li><a href="page4.html">Solar System</a></li>
+                    <li><a href="#">Universe and the Galaxy</a></li>
+                    <li><a href="#">Notable Scietists</a></li>
+                </ul>
+                </nav>
+            </div>
+            </header>
+    <section>
+        <img src="images/bg.jpg" id="bg">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountain.png" id="mountain">
+        <img src="images/road.png" id="road">
+        <h2 id="text">The Moon</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value + 1 + 'px';
+        })
+    </script>
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <div style="padding-left: 10%; padding-right: 10%;">
+        <section1>
+            <h2>Moon</h2>
+                <div style="text-align: center;">
+                <a>
+                    <img src="images/moon2.jpg" style="height: auto; width: 350px; border-radius: 8px;">      
+                </a>
+            </div>
+            <br>
+            <p>
+                Moon, as sole natural satellite of Earth, which it orbits at a mean distance of about 384,400 km (238,900 mi). It is less than one-third the size of Earth (radius about 1,738 km [1,080 mi] at its equator), about 1/81 as massive, and about two-thirds as dense. Its surface gravity is about one-sixth that of Earth, and its gravitational pull is largely responsible for Earth's tides. The Moon shines by reflected sunlight, but its albedo is only 7%. It rotates on its axis in 27.3 days, in exactly the time it takes to orbit Earth, and it therefore always presents the same face to Earth. 
+            </p>
+        </section1>
+        
+        <br>
+
+        <section1>
+            <h2>Phases of the moon</h2>
+            <div style="text-align: center;">
+                <a>
+                    <img src="images/moon-phases.jpg" style="height: auto; width: 350px; border-radius: 8px;">      
+                </a>
+            </div>
+            <div class="sub">   
+                
+                <br><br>
+                <h3>New Moon</h3>
+                <p>
+                    When the illuminated side of the Moon is facing away from the Earth.  The Moon and the Sun are lined up on the same side of the Earth, so we can only see the shadowed side.  During a new moon, we can see the reflected light from the Earth, since no sunlight is falling on the Moon – this is known as ‘earthshine’.
+                </p>
+    
+                <br>
+        
+                <h3>Waxing Crescent</h3>
+                <p>
+                    The waxing crescent moon is the first sliver of the Moon that we can see after the new moon. From the northern hemisphere, the crescent moon has the illuminated edge of the Moon on the right. This situation is reversed for the southern hemisphere.  “Waxing” means that the Moon becomes more illuminated night-by-night.
+                </p>
+    
+                <br>
+        
+                <h3>First Quarter</h3>
+                <p>
+                    This occurs when the Sun and the Moon make a 90-degree angle compared to the Earth.   Although it’s called a quarter moon, we actually see it as half illuminated.
+                </p>
+    
+                <br>
+        
+                <h3>Waxing Gibbous</h3>
+                <p>
+                    This phase of the Moon occurs when more than half of the Moon is illuminated but it is not yet a full Moon.
+                </p>
+    
+                <br>
+        
+                <h3>Full Moon</h3>
+                <p>
+                    This is the phase when the Moon is brightest in the sky. The Moon and the Sun are lined up on opposite sides of the Earth, so from our perspective here on Earth, the Moon is fully illuminated by the light of the Sun. 
+                </p>   
+                
+                <br>
+        
+                <h3>Waning Gibbous</h3>
+                <p>
+                    In this lunar phase, more than half of the Moon is illuminated but it is not yet a full moon. The term “waning” means that it’s getting less illuminated each night.
+                </p> 
+    
+                <br>
+        
+                <h3>Last Quarter</h3>
+                <p>
+                    At this point of the lunar cycle, the Moon has reached half illumination again. Now it is the left-hand side of the Moon that’s illuminated, and the right-hand side is in darkness (from a northern hemisphere perspective).
+                </p> 
+    
+                <br>
+        
+                <h3>Waning Crescent</h3>
+                <p>
+                    This is the final sliver of illuminated moon we can see before the Moon goes into darkness again.
+                </p> 
+            </div>
+        </section1>
+
+        <br>
+        <br>
+        <section1>
+            <div style="text-align: center;">
+                <h2>Interesting Facts</h2>
+                    <p>In other languages moon also known as "Luna" in Italian, Latin, and Spanish, "Lune" in French, "Mond" in German, and "Selene" in Greek.</p>
+                    <p>Only 12 people have ever walked on the Moon where it begin with Neil Armstrong by Appolo 11 mission.</p>
+                    <p>The moon is shrinking due to moonquake.</p>
+                    <p>There is water in moon.</p>
+                    <p>When it was still very young, the moon melted to form a magma ocean.</p>
+                </ul>
+            </div>
+        </section1>
+
+        <br><br>
+        <div style="text-align: center; padding-bottom: 30px;">
+            <a href="#top" class="topbutton" style="text-align: center;">Back to top</a>
+        </div>
+
+        <br><br>
+    
+    
+    </div>
+
+    <div class="footer">
+        <center>
+        <p>
+            <b>REFERENCES:</b>
+        
+        <br><br>Britannica, T. Editors of Encyclopaedia (2009, October 9). Moon summary, 
+        <br>from https://www.britannica.com/summary/Moon
+        <br>‌Phases of The Moon. (n.d.). Astro Navigation Demystified; Astro Navigation Demystified. Retrieved February 4, 2022
+        <br>from https://astronavigationdemystified.com/the-moon/
+        <br>Earth’s Moon. (2021, August 9). NASA Solar System Exploration. 
+        <br>from https://solarsystem.nasa.gov/moons/earths-moon/overview/
+    
+        <br><br> ---------------------------------------------------
+        <br><br>PAGE 3:</b> Coding and Implementation by Tayag,  Design and Concept by Perez. 
+        </p>
+        </center>
+        </div>
+
+    
+    <script type="text/javascript">
+        let  progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";}
+    </script>
+    </body>
+</html>
