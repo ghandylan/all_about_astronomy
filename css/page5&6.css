@@ -56,8 +56,9 @@ section img
 {
   position: relative;
   color: #fff;
-  font-size: 10em;
+  font-size: 8em;
   z-index: 1;
+  padding-bottom: 20px;
 }
 #road
 {
@@ -67,35 +68,6 @@ section1 h2
 {
   font-size: 2.5em;
   color: #fff;
-  text-align: center;
-}
-
-section1 ul{
-    color: whitesmoke;
-}
-
-.width-wrap{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-section1 h3{
-    text-align: center;
-}
-
-.left{
-    text-align: justify;
-    width: 75%;
-    text-justify:distribute-all-lines;
-}
-.sub
-{
-    padding-left: 2%;
-    text-align: left;
-}
-section1 
-{
-    color: white;
 }
 section1 p
 {
@@ -156,100 +128,4 @@ section1 p
   height: 100%;
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
-}
-
-.item1 {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-.footer {
-    background-color: #5C778C;
-    font-size: 100%; 
-    color:white;
-    padding: 10px;
-}
-
-    .topbutton {
-        border: none;
-        padding: 15px 100px;
-        color: #e0e0e0;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 8px;
-        border-color: #e0e0e0;
-        border-style: solid;
-
-    }
-    .topbutton:hover {
-        color: #fb9e32;
-    }
-
-header
-{
-  background: #55d6aa;
-}
-
-.container
-{
-  width: 80%;
-  margin: 0 auto;
-  white-space: nowrap;
-}
-
-nav ul
-{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav li
-{
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  position: relative;
-}
-
-nav a
-{
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  margin: 0px 15px;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  transition: 0.6s;
-}
-
-nav a:hover
-{
-  color: white;
-}
-
-nav a::before
-{
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: black;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before
-{
-  width: 100%;
 }

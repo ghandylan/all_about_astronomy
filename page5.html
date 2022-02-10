@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Universe & The Galaxy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/page5&6.css">
+	 
+  <style>
+	
+	header
+	{
+		background: #55d6aa;
+		position: fixed;
+		z-index: 100000;
+		width: 100%;
+	}
+
+	header::after
+	
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.container
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	nav ul
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	nav li
+	{
+		display: inline-block;
+		margin-left: 70px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		position: relative;
+	}
+
+	nav a
+	{
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 0 15px;
+		letter-spacing: 2px;
+		font-weight: 500px;
+		transition: 0.6s
+	}
+
+	nav a:hover
+	{
+		color: white;
+	}
+
+	nav a::before
+	{
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: black;
+		position: absolute;
+		top: 0;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
+
+	nav a:hover::before
+	{
+		width: 100%;
+	}
+	
+	/* Create three unequal columns that floats next to each other */
+	.column {
+		float: left;
+		padding: 10px;
+			}
+
+	/* Left and right column */
+		.column.side {
+		width: 10%;
+		}
+
+	/* Middle column */
+		.column.middle {
+		width: 80%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}	
+
+	/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 1000px) {
+		.column.side, .column.middle {
+		width: 100%;
+	}
+	}
+	
+	hr.rounded {
+		border-top: 8px solid #bbb;
+		border-radius: 5px;
+	}
+	
+	.footer {
+		background-color: #5C778C;
+		font-size: 100%; 
+		font-family:Cambria; 
+		color:white;
+		padding: 10px;
+	}
+	
+	a {
+	color: white;
+	}
+
+  
+  </style>
+  </head>
+
+  <body>
+	
+	 <header>
+      <div class="container">
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Astronomy</a></li>
+            <li><a href="page2.html">Sun</a></li>
+            <li><a href="page3.html">Moon</a></li>
+            <li><a href="page4.html">Solar System</a></li>
+            <li><a href="page5.html">Universe and the Galaxy</a></li>
+            <li><a href="page6.html">Notable Scientists</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    
+	<section>
+      <img src="images/bg.jpg" id="bg">
+      <img src="images/moon.png" id="moon">
+      <img src="images/mountain.png" id="mountain">
+      <img src="images/road.png" id="road">
+      <h2 id="text">Universe & The Galaxy</h2>
+    </section>
+	
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+          var value = window.scrollY;
+          bg.style.top = value * 0.5 + 'px';
+          moon.style.left = -value * 0.5 + 'px';
+          mountain.style.top = -value * 0.15 + 'px';
+          road.style.top = value * 0.15 + 'px';
+          text.style.top = value + 1 + 'px';
+        })
+    </script>
+	 <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section1>
+      <h2> </h2>
+      <p></p>
+    </section1>
+	  <script type="text/javascript">
+      let  progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+	
+	<br><br><br><br>
+	 <img src="images/what.jpg" alt="what is a universe?" style="width:100%;height:325px;">
+	<br><br>
+	 <p align="center" style="font-size:170%; font-family:Cambria; color:white;"> 
+			The universe is everything. It includes all of space, and all the matter and energy that space contains. It even includes 
+	<br>	time itself and, of course, it includes you. Earth and the Moon are part of the universe, as are the other planets and 
+	<br>	their many dozens of moons. Along with asteroids and comets, the planets orbit the Sun. The Sun is one among hundreds 
+	<br>	of billions of stars in the Milky Way galaxy, and most of those stars have their own planets, known as exoplanets.
+	<br><br>The Milky Way is but one of billions of galaxies in the observable universe — all of them, including our own, are thought to 
+	<br>	have supermassive black holes at their centers. All the stars in all the galaxies and all the other stuff that astronomers can’t 
+	<br>	even observe are all part of the universe. It is, simply, everything. The whole cosmic system of matter and energy of which Earth.
+	</p>
+	
+	<br><br><br><br><br>
+	
+	<img src="images/types.jpg" alt="types of universes" style="width:100%;height:105px;">
+	
+	<br><br><br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:475px; color:white; "><center></center>
+			<td><img src="https://globalnews.ca/wp-content/uploads/2016/08/multiverses.jpg?quality=85&strip=all" style="width:100%;height:475px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:475px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:475px; color:white; "><center><b>Infinite Universes</b></center>
+			<br>	Scientists can't be sure what the shape of space-time is, but most likely, it's flat (as  
+			<br>	opposed to spherical even donut-shape) and stretches out infinitely. But if space-time goes   
+			<br>	on forever, then it must start repeat at some point, because there are a finite number of  
+			<br>	ways particles can be arranged in space and time.
+			<br><br>So if you look far enough, you would encounter another version of you — in fact, infinite  
+			<br>	versions of you. Some these twins will be doing exactly what you're doing right now, while  
+			<br>	others willhave worn a different sweater this morning, and still others will have made   
+			<br>	vastly different career and life choices.
+			<br><br>Because the observable universe extends only as far as light has had a chance to get in the 
+			<br>	13.7 billion years since the Big Bang (that would be 13.7 billion light-years), the space-  
+			<br>	time beyond that distance can be considered to be its own separate universe.
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:6%; height:475px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:6%; height:475px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:475px; color:white; "><center><b>Bubble Universes</b></center>
+			<br>	In addition to the multiple universes created by infinitely extending space-time, other
+			<br>	universes could arise from a theory called "eternal inflation." Inflation is the notion   
+			<br>	that the universe expanded rapidly after the Big Bang, in effect inflating like a balloon. 
+			<br>	Eternal inflation, first proposed by Tufts University cosmologist Alexander Vilenkin,   
+			<br>	suggests that some pockets of space stop inflating, while other regions continue to inflate, 
+			<br>	thus giving rise to many isolated "bubble universes."
+			<br><br>Thus, our own universe, where inflation has ended, allowing stars and galaxies to form,   
+			<br>	is but a small bubble in a vast sea of space, some of which is still inflating, that   
+			<br>	contains many other bubbles like ours. And in some of these bubble universes, the laws 
+			<br>	of physics and fundamental constants might be different than in ours, making some 
+			<br>	universes strange places indeed.
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:475px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://insidetheperimeter.ca/wp-content/uploads/2016/09/Video-screenshot.jpg" style="width:100%;height:475px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:475px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:475px; color:white; "><center></center></td>
+			<td><img src="https://images.ctfassets.net/cnu0m8re1exe/7939yWO5hGqBYZiNoutsrP/74f77a9bf096b5a100d03b2396beaf0a/shutterstock_1799052499.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" style="width:100%;height:475px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:475px; color:white; "><center></center></td>
+			<td align="left-justify" style="font-size:160%; font-family:Cambria; width:fit; height:475px; color:white; "><center><b>Parallel Universes</b></center>
+			<br>	Another idea that arises from string theory is the notion of "braneworlds" — parallel  
+			<br>	universes that hover just out of reach of our own, proposed by Princeton University's       
+			<br>	Paul Steinhardt and Neil Turok of the Perimeter Institute for Theoretical Physics in   
+			<br>	Ontario, Canada. The idea comes from the possibility of many more dimensions to our   
+			<br>	world than the three of space and one of time that we know. In addition to our own 
+			<br>	three-dimensional "brane"of space, other three-dimensional branes may float in a higher-dimensional space.
+			<br><br>Columbia University physicist Brian Greene describes the idea as the notion that "our universe 
+			<br>	is one of potentially numerous 'slabs' floating in a higher-dimensional space, much like a slice 
+			<br>	of bread within a grander cosmic loaf," in his book "The Hidden Reality"
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:6%; height:475px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:6%; height:475px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:475px; color:white; "><center><b>Daughter Universes</b></center>
+			<br>	The theory of quantum mechanics, which reigns over the tiny world of  
+			<br>	subatomic particles, suggests another way multiple universes might arise. 
+			<br>	mechanics describes the  world in terms of probabilities, rather than   
+			<br>	Quantum outcomes. And the mathematics of this theory might suggest     
+			<br>	all possible outcomes of a situation do occur — in their own separate  
+			<br>	universes. For example, if you reach acrossroads where you can go left 
+			<br> 	gives rise to two daughter universes: one in which you go right.
+			<br><br>"And in each universe, there's a copy of you witnessing one or the other   
+			<br>	outcome, thinking incorrectly that your reality is the only reality," 
+			<br>	Greene wrote in "The Hidden Reality."
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:475px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://cosmicphysics.files.wordpress.com/2016/07/banner_black-holes_inside-banner_2000x1125.jpg" style="width:100%;height:475px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:475px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:475px; color:white; "><center></center></td>
+			<td><img src="https://thumbs.dreamstime.com/b/synergies-numbers-math-universe-series-abstract-design-made-digits-elements-space-subject-mathematics-science-125300753.jpg" style="width:100%;height:475px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:475px; color:white; "><center></center></td>
+			<td align="left-justify" style="font-size:160%; font-family:Cambria; width:fit; height:475px; color:white; "><center><b>Mathematical Universes</b></center>
+			<br>	Scientists have debated whether mathematics is simply a useful tool for describing the  
+			<br> 	universe, or whether math itself is the fundamental reality, and our observations of the   
+			<br>	universe are just imperfect perceptions of its true mathematical nature. If the latter is the 
+			<br>	case, then perhaps the particular mathematical structure that makes up our universe isn't the   
+			<br> 	only option, and in fact all possible mathematical structures their own separate universes.
+			<br><br>"A mathematical structure is something that you can describe in a way that's completely  
+			<br>	independent of human baggage," said Max Tegmark of MIT, who proposed this brain-twisting 
+			<br>	idea. "I really believe that there is this universe out there that can exist independently of me  
+			<br>	that would continue to exist even if there were no humans."
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:6%; height:475px; color:white; "><center></center></td>
+		</tr>
+	</table>
+
+	<br><br><br><br><br><br><br><br><br><br>
+	 <img src="images/galaxy.jpg" alt="what is a galaxy?" style="width:100%;height:325px;">
+	 <br><br><br><br>
+	 <p align="center" style="font-size:170%; font-family:Cambria; color:white;"> 
+			A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems. A galaxy is held  
+	<br>	together by gravity. Our galaxy, the Milky Way, also has a supermassive black hole in the middle.
+	<br><br>When you look up at stars in the night sky, you’re seeing other stars in the Milky Way. If it’s really dark, far  
+	<br>	away from lights from cities and houses, you can even see the dusty bands of the Milky Way stretch across the sky.
+	<br><br>There are many galaxies besides ours, though. There are so many, we can’t even count them all yet! The Hubble Space 
+	<br>	Telescope looked at a small patch of space for 12 days and found 10,000 galaxies, of all sizes, shapes, and colors. 
+	<br>	Some scientists think there could be as one hundred billion many as  galaxies in the universe.
+
+	</p>
+	
+	<br><br><br><br><br><br><br>
+	<img src="images/typesgala.jpg" alt="types of galaxies?" style="width:100%;height:105px;">
+	<br><br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+			<td><img src="https://imageio.forbes.com/blogs-images/alexknapp/files/2013/01/Largest_Galaxy.jpg?fit=bounds&format=jpg&width=550" style="width:100%;height:455px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:455px; color:white; "><center></center></td>
+			<td align="left-justify" style="font-size:160%; font-family:Cambria; width:fit; height:455px; color:white; ">
+			<br>	ㅤㅤㅤScientists have debated whether mathematics is simply a useful tool   
+			<br> 	for describing the Astronomers classify galaxies into three major category:
+			<br>	elliptical, spiral and irregular. These galaxies span a wide range of sizes,  
+			<br>	from dwarf galaxies containing as few as 100 million stars to giant galaxies with more than a trillion stars.
+			<br><br>ㅤㅤㅤEllipticals, which account for about one-third of all galaxies, vary   
+			<br>	nearly circular to very elongated. They possess comparatively little gas and  
+			<br>	dust, contain older stars and are not actively forming stars anymore. The  
+			<br>	largest and rarest of these, called giant ellipticals, are about 300,000 light- 
+			<br>	years across. Astronomers theorize that these are formed by the mergers of 
+			<br>	smaller galaxies. Much more common are dwarf ellipticals, which are only a few thousand light-years wide.
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	 
+	<br>
+	 
+	<div class="row"><div class="column side"><h2></h2><p></p></div>
+  
+	<div class="column middle"; align="left-justify" style="font-size:170%; font-family:Cambria; color:white;">
+    
+    <p>
+		ㅤㅤㅤSpiral galaxies appear as flat, blue-white disks of stars, gas and dust with yellowish bulges in their centers. 
+		These galaxies are divided into two groups: normal spirals and barred spirals. In barred spirals, the bar of stars 
+		runs through the central bulge. The arms of barred spirals usually start at the end of the bar instead of from the bulge. 
+		Spirals are actively forming stars and comprise a large fraction of all the galaxies in the local universe.
+	</p>
+	
+    <p>
+		ㅤㅤㅤIrregular galaxies, which have very little dust, are neither disk-like nor elliptical. Astronomers often see irregular 
+		galaxies as they peer deeply into the universe, which is equivalent to looking back in time. These galaxies are abundant 
+		in the early universe, before spirals and ellipticals developed.
+
+	</p>
+	
+	<p>
+		ㅤㅤㅤAside from these three classic categories, astronomers have also identified many unusually shaped galaxies that seem to 
+		be in a transitory phase of galactic development. These include those in the process of colliding or interacting, and those 
+		with active nuclei ejecting jets of gas.
+	</p>
+
+	</div>
+	<br><br>
+	
+	<div class="column side"><h2></h2></div></div>
+	
+	<br><br><br><br>
+	
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+			
+			<td align="center" style="font-size:175%; font-family:Cambria; width:12%; height:455px; color:white; ">
+				<center><b>ORIGINS OF THE UNIVERSE 101</b></center><br><hr class="rounded"><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/HdPzOWlLrbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:455px; color:white; "><center></center></td>
+			<td align="center" style="font-size:175%; font-family:Cambria; width:12%; height:455px; color:white; ">
+				<center><b>WHAT ARE GALAXIES MADE OF</b></center><br><hr class="rounded"><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wsCedw3iBU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:455px; color:white; "><center></center></td>
+			
+			<td align="center" style="font-size:175%; font-family:Cambria; width:12%; height:455px; color:white; ">
+				<center><b>SOLAR SYSTEM VS GALAXY VS UNIVERSE</b></center><br><hr class="rounded"><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/RQ7MAPeC0Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br><br><br><br><br><br><br><br>
+	
+	<div class="footer">
+	<center>
+	<p>
+		<b>REFERENCES:</b>
+	
+	<br><br>Moskowitz, C. (2012, December 7). 5 Reasons We May Live in a Multiverse. Space.Com. Retrieved February 4, 2022, 
+	from <a href="https://www.space.com/18811-multiple-universes-5-theories.html" target="_blank"> https://www.space.com/18811-multiple-universes-5-theories.html </a>
+	<br>NASA. (n.d.). What is the Universe? | What is an Exoplanet? –. Exoplanet Exploration: Planets Beyond Our Solar System. Retrieved February 4, 2022, 
+	from <a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/" target="_blank"> https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/</a>
+	<br>NASA HUBBLESITE. (n.d.). What is the Universe? | What is an Exoplanet? –. Exoplanet Exploration: Planets Beyond Our Solar System. Retrieved February 4, 2022, 
+	from <a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/" target="_blank"> https://exoplanets.nasa.gov/what-is-an-exoplanet/what-is-the-universe/ </a>
+	<br>NASA Space Place. (n.d.). What Is a Galaxy? | NASA Space Place – NASA Science for Kids. Retrieved February 4, 2022, 
+	from <a href="https://spaceplace.nasa.gov/galaxy/en/" target="_blank"> https://spaceplace.nasa.gov/galaxy/en/ </a>
+	<br><br> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+	<br><br> - PAGE 5 -</b>  
+	<br> Coding and Implementation by Bautista
+	<br> Documentation and Research by Oñate 
+	</p>
+	</center>
+	</div>
+  </body>ㅤ
+</html>

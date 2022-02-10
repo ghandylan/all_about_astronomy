@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  
+    <title>Notable Scientist & Their Discoveries in Astronomy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/page5&6.css">
+	 
+  <style>
+	
+	header
+	{
+		background: #55d6aa;
+		position: fixed;
+		z-index: 100000;
+		width: 100%;
+	}
+
+	header::after
+	
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.container
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	nav ul
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	nav li
+	{
+		display: inline-block;
+		margin-left: 70px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		position: relative;
+	}
+
+	nav a
+	{
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 0 15px;
+		letter-spacing: 2px;
+		font-weight: 500px;
+		transition: 0.6s
+	}
+
+	nav a:hover
+	{
+		color: white;
+	}
+
+	nav a::before
+	{
+		content: '';
+		display: block;
+		height: 5px;
+		background-color: black;
+		position: absolute;
+		top: 0;
+		width: 0%;
+		transition: all ease-in-out 250ms;
+	}
+
+	nav a:hover::before
+	{
+		width: 100%;
+	}
+	
+	
+	hr.rounded {
+		border-top: 8px solid #bbb;
+		border-radius: 5px;
+	}
+	
+	.footer {
+		background-color: #5C778C;
+		font-size: 100%; 
+		font-family:Cambria; 
+		color:white;
+		padding: 10px;
+	}
+	a {
+	color: white;
+	}
+  
+  </style>
+  </head>
+
+  <body>
+	
+	 <header>
+      <div class="container">
+
+        <nav>
+          <ul>
+            <li><a href="page1.html">Astronomy</a></li>
+            <li><a href="page2.html">Sun</a></li>
+            <li><a href="page3.html">Moon</a></li>
+            <li><a href="page4.html">Solar System</a></li>
+            <li><a href="page5.html">Universe and the Galaxy</a></li>
+            <li><a href="page6.html">Notable Scietists</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    
+	<section>
+      <img src="images/bg.jpg" id="bg">
+      <img src="images/moon.png" id="moon">
+      <img src="images/mountain.png" id="mountain">
+      <img src="images/road.png" id="road">
+      <h4 id="text"><center>Notable Scientists & Their Discoveries</center</h4>
+    </section>
+	
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+          var value = window.scrollY;
+          bg.style.top = value * 0.5 + 'px';
+          moon.style.left = -value * 0.5 + 'px';
+          mountain.style.top = -value * 0.15 + 'px';
+          road.style.top = value * 0.15 + 'px';
+          text.style.top = value + 1 + 'px';
+        })
+    </script>
+	 <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section1>
+      <h2> </h2>
+      <p></p>
+    </section1>
+	  <script type="text/javascript">
+      let  progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+      }
+    </script>
+	
+	<br><br><br><br>
+	 <img src="images/sci.jpg" alt="scientist?" style="width:100%;height:325px;">
+	<br><br><br><br><br>
+	 <b><p align="center" style="font-size:170%; font-family:Cambria; color:white;"> 
+		<br>These are some of the most notable scientists that have spent their life dedicating into making theories, 
+		<br>developing hypothesis that gave a breakthrough in the field of science and astronomy.
+	</p></b>
+
+	<br><br><br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center>
+			<td><img src="https://miro.medium.com/max/756/0*yDJADhKLRSeNiXBN.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>ERATOSTHENES OF CYRENEㅤㅤㅤ</b></center>
+			<br>	Scientists can't be sure what the shape of space-time is, but most likely, 
+			<br>	it's flat (as When most people believed the world was flat, the notable  
+			<br>	Greek mathematician, astronomer and geographer Eratosthenes (276–195 
+			<br>	B.C.) used the sun to measure the size of the round Earth, according to NASA.   
+			<br>	His measurement of 24,660 miles (39,690 kilometers) was only 211 miles 
+			<br>	(340 km) off the true measurement.
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>CLAUDIUS PTOLEMY</b></center>
+			<br>	In ancient Greece, astronomer and mathematician Claudius Ptolemy (A.D. 90–168) set up
+			<br>	a model of the solar system in which the sun, stars, and other planets revolved around 
+			<br>	Earth. Known as the Ptolemaic system, it remained in place for hundreds of years, though 
+			<br>    it turned out to be flat wrong. According to NASA, "Ptolemy represents the epitome of
+			<br>	knowledge of Grecian astronomy."
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://www2.hao.ucar.edu/sites/default/files/images/education/physicists/ptolemy.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center>
+			<td><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Nikolaus_Kopernikus.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>NICOLAUS COPERNICUSㅤㅤㅤ</b></center>
+			<br>	In 16th century Poland, astronomer Nicolaus Copernicus (1473–1543) proposed a 
+			<br>	model of the solar system that involved the Earth revolving around the sun, according 
+			<br>	to NASA. The model wasn't completely correct, as astronomers of the time struggled 
+			<br>	with the backwards path Mars sometimes took, but it eventually changed the way  
+			<br>	many scientists viewed the solar system.
+
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>JOHANNES KEPLERY</b></center>
+			<br>	Using detailed measurements of the path of planets kept by Danish astronomer Tycho Brahe, 
+			<br>	Johannes Kepler (1571–1630) determined that planets traveled around the sun not in circles 
+			<br>	but in ellipses. In so doing, he calculated three laws involving the motions of planets that 
+			<br>	astronomers still use in calculations today. However, closed minds put Kepler's work at risk. 
+
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Johannes_Kepler_1610.jpg/745px-Johannes_Kepler_1610.jpg" style="width:fit;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center>
+			<td><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>GALILEO GALILEIㅤㅤㅤ</b></center>
+			<br>	In 16th century Poland, astronomer Nicolaus Copernicus (1473–1543) proposed
+			<br>	a Born in Italy, Galileo Galilei (1564–1642) is often credited with the creation of
+			<br>	the optical telescope, though in truth he improved on existing models. According
+			<br>	to the Rice University's Galileo Project, "Galileo made his first telescope in 1609 
+			<br>	modeled after telescopes produced in other parts of Europe that could  magnify 
+			<br>	three times created a telescope later that same year that could magnify objects.
+	
+
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>ISAAC NEWTON</b></center>
+			<br>	English astronomer Sir Isaac Newton (1643–1727) is most famous for his work on forces, 
+			<br>	specifically gravity. Building on the work of gone before him — he is quoted as saying,
+			<br>	"If I have seen further, it is by standing upon the shoulders of giants" — calculated three
+			<br>	laws describing the motion of forces between objects, known today as Newton's laws.
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg" style="width:fit;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center>
+			<td><img src="https://www.onthisday.com/images/people/edmond-halley-medium.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>EDMOND HALLEYㅤㅤㅤ</b></center>
+			<br>	Edmond Halley (1656–1742) was the British scientist who reviewed historical 
+			<br>	comet sightings and proposed that the comet that had appeared in 1456, 1531, 
+			<br>	1607, and 1682 were all the same, and would return in 1758. Although he died 
+			<br>	before its return, he was proven correct, and the comet was named in his honor,
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>ALBERT EINSTEIN</b></center>
+			<br>	In the early 20th century, German physicist Albert Einstein (1879–1955) became one 
+			<br>	of the most famous scientists ever after proposing a new way of looking at the universe 
+			<br>	that went beyond current understanding. Einstein suggested that the laws of physics 
+			<br>	are the same throughout the universe, that the speed of light in a vacuum is constant, 
+			<br>	and that space and time are linked in entity known as space-time, which is distorted.
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://www.biography.com/.image/t_share/MTc5ODc5NjY5ODU0NjQzMzIy/gettyimages-3091504.jpg" style="width:fit;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center>
+			<td><img src="https://cdn.britannica.com/60/198560-050-11888CDF/Edwin-Hubble-1931.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>
+			<td align="right-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>EDWIN HUBBLEㅤㅤㅤ</b></center> 
+			<br>	At the same time Einstein was expanding man's view of the universe, American 
+			<br>	astronomer Edwin Hubble (1899–1953) calculated that a small blob in the sky 
+			<br>	existed outside of the Milky Way.
+			</td>ㅤㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br>
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+			<td align="center-justify" style="font-size:160%; font-family:Cambria; width:fit; height:375px; color:white; "><center><b>STEPHEN HAWKING</b></center>
+			<br>	Stephen Hawking (1942– 2018) made many significant insights into the field of  
+			<br>	cosmology. He proposed that, as the universe has a beginning, it will likely also 
+			<br>	end. He also suggested that it has no boundary or border. Despite being viewed as 
+			<br>	one of the most brilliant minds since Einstein, many of Hawking's books and 
+			<br>	lectures are steered toward the general public as he seeks to educate people about the universe they live in.
+			</td>ㅤ
+			<td align="center" style="font-size:160%; font-family:Cambria; width:2%; height:375px; color:white; "><center></center></td>ㅤ
+			<td><img src="https://media.newyorker.com/photos/5aaae008ffdf3219da822b57/4:3/w_3726,h_2794,c_limit/Kaiser-Stephen-Hawking.jpg" style="width:100%;height:375px;" align="center"></td>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:14%; height:375px; color:white; "><center></center></td>
+		</tr>
+	</table>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<table style="width:100%"; "length:100%">
+		<tr>
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+			
+			<td align="center" style="font-size:175%; font-family:Cambria; width:12%; height:455px; color:white; ">
+				<center><b>FAMOUS ASTRONOMERS AND THEIR DISCOVERIES</b></center><br><hr class="rounded"><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/PyLyppq741c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			
+			<td align="center" style="font-size:160%; font-family:Cambria; width:4%; height:455px; color:white; "><center></center></td>
+			
+			<td align="center" style="font-size:175%; font-family:Cambria; width:12%; height:455px; color:white; ">
+				<center><b>TOP 10 GREATEST ASTRONOMY <br>DISCOVERIES</b></center><br><hr class="rounded"><br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qkvaTTjn_mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+			
+			<td align="center" style="font-size:160%; font-family:Cambria; width:12%; height:455px; color:white; "><center></center></td>
+			
+		</tr>
+	</table>
+	
+	<br><br><br><br><br><br><br><br><br>
+	
+	<div class="footer">
+	<center>
+	<p>
+		<b>REFERENCES:</b>
+	
+	<br><br>Chao, T. (2013, February 5). The Most Famous Astronomers of All Time. Space.Com. Retrieved February 4, 2022, 
+	<br>from <a href="https://www.space.com/19215-most-famous-astronomers-history.html" target="_blank"> https://www.space.com/19215-most-famous-astronomers-history.html </a>
+	<br>Tillman, N. T., & Harvey, A. (2022, January 20). Famous astronomers: How these scientists shaped astronomy. Space.Com. Retrieved February 4, 2022, 
+	<br>from  <a href="https://www.space.com/16095-famous-astronomers.html" target="_blank"> https://www.space.com/19215-most-famous-astronomers-history.html </a>
+
+	<br><br> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+	<br><br> - PAGE 5 -</b>  
+	<br> Coding and Implementation by Bautista
+	<br> Documentation and Research by Oñate 
+	</p>
+	</center>
+	</div>
+	
+  </body>
+</html>
