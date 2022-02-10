@@ -1,4 +1,3 @@
-#
 {
   margin: 0;
   padding: 0;
@@ -152,6 +151,9 @@ section1 p
 
 header {
     background: #55d6aa;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
 }
 
 .footer {
